@@ -1,1 +1,3 @@
-D
+Django
+tensorflow
+numpy
