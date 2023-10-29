@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h1>Detector</h1>
+    <form action="/detector" method="post">
+      {% csrf_token %}
+      <input type="file" name="image" id="file">
+      <input type="submit" value="Upload">
+    </form>
+  </div>
+  {% if prediction %}
+    <div>
+      <h2>Prediction</h2>
+      <p>{{ prediction }}</p>
+    </div>
+  {% endif %
+</body>
+</html>
